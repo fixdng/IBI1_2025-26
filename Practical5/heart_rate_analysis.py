@@ -7,7 +7,6 @@ mean_heart_rate = sum(heart_rates) / num_patients
 
 print(f"\nThere are {num_patients} patients in the dataset and the mean heart rate is {mean_heart_rate:.2f} bpm.")
 
-# Categorize heart rates
 low_count = 0
 normal_count = 0
 high_count = 0
@@ -24,16 +23,11 @@ print(f"Low category (<60 bpm): {low_count} patients")
 print(f"Normal category (60-120 bpm): {normal_count} patients")
 print(f"High category (>120 bpm): {high_count} patients")
 
-categories = {
-    "Low": low_count,
-    "Normal": normal_count,
-    "High": high_count
-}
+categories = { "Low": low_count,"Normal": normal_count,"High": high_count}
 
 largest_category = max(categories, key=categories.get)
 print(f"The category with the largest number of patients is: {largest_category}")
 
-# Pie chart for heart rate categories
 plt.figure(figsize=(6, 6))
 plt.pie(
     categories.values(),
