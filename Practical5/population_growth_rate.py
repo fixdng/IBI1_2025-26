@@ -1,20 +1,8 @@
 
 import matplotlib.pyplot as plt
-population_2020 = {
-    "UK": 66.7,
-    "China": 1426.0,
-    "Italy": 59.4,
-    "Brazil": 208.6,
-    "USA": 331.6
-}
+population_2020 = { "UK": 66.7,"China": 1426.0, "Italy": 59.4, "Brazil": 208.6, "USA": 331.6}
 
-population_2024 = {
-    "UK": 69.2,
-    "China": 1410.0,
-    "Italy": 58.9,
-    "Brazil": 212.0,
-    "USA": 340.1
-}
+population_2024 = {"UK": 69.2,"China": 1410.0,"Italy": 58.9,"Brazil": 212.0, "USA": 340.1}
 
 population_change = {}
 
@@ -25,7 +13,7 @@ for country in population_2020:
     print(f"{country}: {percent_change:.2f}%")
 
 # Sort descending from largest increase to largest decrease
-sorted_changes = sorted(population_change.items(), key=lambda x: x[1], reverse=True)
+sorted_changes = sorted(population_change.items(), key=lambda x: x[1], reverse=True) #dictionary sorting
 
 print("\nPopulation changes from largest increase to largest decrease:")
 for country, change in sorted_changes:
