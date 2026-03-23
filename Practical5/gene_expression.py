@@ -2,31 +2,19 @@ import matplotlib.pyplot as plt
 gene_of_interest = "MYC"
 
 
-gene_expression = {
-    "TP53": 12.4,
-    "EGFR": 15.1,
-    "BRCA1": 8.2,
-    "PTEN": 5.3,
-    "ESR1": 10.7
-}
+gene_expression = {"TP53": 12.4,"EGFR": 15.1,"BRCA1": 8.2,"PTEN": 5.3,"ESR1": 10.7}
 
-print("Initial gene expression dictionary:")
-print(gene_expression)
-
-# Add MYC
 gene_expression["MYC"] = 11.6
 
-print("\nUpdated gene expression dictionary:")
+print("\ngene expression dictionary:")
 print(gene_expression)
 
-# Print expression value for selected gene
 print(f"\nSelected gene: {gene_of_interest}")
 if gene_of_interest in gene_expression:
     print(f"Expression value of {gene_of_interest}: {gene_expression[gene_of_interest]}")
 else:
     print(f"Error: gene '{gene_of_interest}' is not present in the dataset.")
 
-# Calculate average expression
 average_expression = sum(gene_expression.values()) / len(gene_expression)
 print(f"Average gene expression level: {average_expression:.2f}")
 
