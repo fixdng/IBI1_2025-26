@@ -1,5 +1,0 @@
-This is an example file for reflection in IBI1_2025-26.
-
-During this course, I have learnt version control, how to register my github account and create fork under someone's link.
-
-i think the most difficult for this part is to have a stable and fast vpn. So i spend a lot of time searching for it.
