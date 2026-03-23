@@ -1,14 +1,10 @@
 # Pseudocode:
-# 1. Set total class size.
-# 2. Set starting infected students.
-# 3. Set growth rate.
-# 4. Print day 1 infected count.
-# 5. Use a for loop to calculate future days.
-# 6. Update infected count each day.
-# 7. If infected exceeds class size, set it equal to class size.
-# 8. Print infected count for each day.
-# 9. Stop once all students are infected.
-# 10. Print total days needed.
+# 1. Set total class size, starting infected students, growth rate
+# 2 Use a for loop to calculate future days.
+# 3. Update infected count each day.
+# 4. If infected exceeds class size, set it equal to class size.
+# 5. Stop once all students are infected.
+
 
 total_students = 91
 infected = 5

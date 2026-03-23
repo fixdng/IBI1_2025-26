@@ -1,14 +1,9 @@
 
-# 1. Ask the user to enter age, weight, gender, and creatine concentration.
-# 2. Convert age, weight, and creatine concentration into numbers.
-# 3. Check whether age is less than 100.
-# 4. Check whether weight is greater than 20 and less than 80.
-# 5. Check whether creatine concentration is greater than 0 and less than 100.
-# 6. Check whether gender is either "male" or "female".
-# 7. If any input is invalid, print which variable needs corrected.
-# 8. If all inputs are valid, calculate creatine clearance.
-# 9. If gender is female, multiply the result by 0.85.
-# 10. Print the final creatine clearance rate.
+# 1. enter age, weight, gender, and creatine concentration.
+# 2. Check the input is valid
+# 3. If any input is invalid, print which variable needs corrected.
+# 4. If gender is female, multiply the result by 0.85.
+
 
 age = int(input("Enter age in years: "))
 weight = float(input("Enter weight in kg: "))
