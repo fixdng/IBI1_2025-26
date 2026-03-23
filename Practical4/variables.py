@@ -14,7 +14,7 @@ elif e > d:
 else:
     print("d and e are equal")
 
-
+#comment：Since d is larger than e, the population change is decelerating
 
 
 # Create Boolean variables
