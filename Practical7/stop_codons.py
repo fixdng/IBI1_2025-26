@@ -12,7 +12,7 @@ for line in i:
     if line.startswith(">"):
 
         if gene_name != '':
-            results = re.findall(r'ATG(?:[ACGT]{3})*?(?:TAA|TAG|TGA)', seq)
+            results = re.findall(r'(?=(ATG(?:[ACGT]{3})*?(?:TAA|TAG|TGA)))', seq)
 
             if results:
                 stop_codons = []
@@ -33,7 +33,7 @@ for line in i:
 
 
 if gene_name != '':
-    results = re.findall(r'ATG(?:[ACGT]{3})*?(?:TAA|TAG|TGA)', seq)
+    results = re.findall(r'(?=(ATG(?:[ACGT]{3})*?(?:TAA|TAG|TGA)))', seq)
 
     if results:
         stop_codons = []
