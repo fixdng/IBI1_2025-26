@@ -4,11 +4,12 @@ import matplotlib.pyplot as plt
 N = 10000
 beta = 0.3
 gamma = 0.05
-recovered=0
+
 
 plt.figure(figsize=(6, 4), dpi=150)
 
 for v in range(0, 101, 10):   # 0,10,20,...100
+    recovered=0
     vaccinated = int(N * v / 100)
     if vaccinated == N:
         infected = 0
