@@ -18,6 +18,12 @@ recent_data = dalys_data.loc[dalys_data["Year"] == 2019, ["Entity", "DALYs"]]
 max_row = recent_data.loc[recent_data["DALYs"].idxmax()]
 min_row = recent_data.loc[recent_data["DALYs"].idxmin()]
 
+print("Maximum DALYs in 2019:")
+print(max_row)
+
+print("Minimum DALYs in 2019:")
+print(min_row)
+
 #plot
 le = dalys_data.loc[dalys_data["Entity"] == "Lesotho"]
 plt.plot(le.Year, le.DALYs, 'bo')
@@ -26,7 +32,6 @@ plt.xlabel("Year")
 plt.ylabel("DALYs")
 plt.title("DALYs over time in Lesotho")
 plt.show()
-
 
 #question
 question_data = dalys_data.loc[dalys_data["Year"] == 2019, "DALYs"]
